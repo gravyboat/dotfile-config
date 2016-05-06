@@ -1,1 +1,3 @@
-# vim-config
+# dotfile-config
+
+Common dotfile settings
