@@ -17,15 +17,19 @@ Helptags
 syntax on
 filetype plugin indent on
 set number
+set showcmd
 syntax enable
-set background=dark
-colorscheme solarized
 set nocompatible
 filetype plugin indent on
 set softtabstop=4
-set expandtab
 set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
 set ruler
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+autocmd FileType python match OverLength /\%80v.\+/
