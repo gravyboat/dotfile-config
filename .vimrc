@@ -7,13 +7,18 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+" let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim' " required
+
+" Salt syntax plugin
+Plugin 'saltstack/salt-vim'
+
+" Solarized plugin
+Plugin 'altercation/vim-colors-solarized'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-execute pathogen#infect()
-Helptags
 syntax on
 filetype plugin indent on
 set number
